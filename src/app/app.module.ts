@@ -12,6 +12,7 @@ import { TodosComponent } from './components/todos/todos.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { MyDirectiveDirective } from './custom-directives/my-directive.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
     TodosComponent,
     TodoItemComponent,
     HeaderComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    MyDirectiveDirective
   ],
   imports: [
     BrowserModule,
