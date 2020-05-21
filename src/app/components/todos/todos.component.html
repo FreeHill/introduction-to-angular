@@ -1,10 +1,12 @@
 <!-- use app-todo-item selector from the todo-item component. Bind
 "todo" from todo-item.component.ts to [todo], loop through and display its content
 -->
-
-<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
-<p class="count" *ngIf=" todosLength() ">Number of items
-    <em>{{ this.todosLength()}}</em>
-</p>
-<app-todo-item *ngFor="let todo of todos" [todo]="todo" (deleteTodo)="deleteTodo($event)">
-</app-todo-item>
+<div class="container-fluid">
+    <app-add-todo (addTodo)="addTodo($event)">
+    </app-add-todo>
+    <p class="count" *ngIf=" todosLength() ">Number of items
+        <em>{{ this.todosLength()}}</em>
+    </p>
+    <app-todo-item *ngFor="let todo of todos" [todo]="todo" (deleteTodo)="deleteTodo($event)">
+    </app-todo-item>
+</div>
