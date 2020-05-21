@@ -6,6 +6,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox'
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule } from '@angular/material/button'
 import { AppRoutingModule } from './app-routing.module';
+import {MatIconModule} from '@angular/material/icon'
+
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
@@ -42,7 +45,8 @@ import { CryptoService } from './services/crypto.service';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [DateService, CryptoService],
   bootstrap: [AppComponent]
